@@ -1,5 +1,9 @@
 # Title of your project
 
+![Demo](reports/img/pic01.jpg)
+
+# Link to Demo:
+- [Migros Store Consultancy (Switzerland)](https://migros-store-consultancy.streamlit.app/)
 
 # Summary
 
@@ -15,7 +19,7 @@
 
 Here is an example of including images:
 
-![img](img/pic01.jpg)
+![img](reports/img/pic01.jpg)
 
 # Part 1 Title
 Ideally, your work should be broken down into several parts so that it's easier to have a global view of the work you have done
