@@ -13,17 +13,13 @@ df = deepcopy(df_raw)
 with open("./data/raw/georef-switzerland-kanton.geojson") as response:
     geo_df_raw = json.load(response)
 
-# Process data
+### Processing data
+# TODO: Remove duplications by uniqueID
+
+# Number of Migros stores per city
 reduced_df = df.groupby(by=['addr:city']).size().reset_index(name='count')
 
-# Control Panel
-if st.checkbox("Show DataFrame", value=False):
-    st.subheader("Dataset")
-    st.text('Migros Stores Data in Switzerland')
-    st.dataframe(data=df)
-    st.text('Processed Data')
-    st.dataframe(data=reduced_df)
-
+## Plot against cities (not Cantons)
 fig = px.choropleth_mapbox(
     reduced_df,
     geojson=geo_df_raw,
@@ -41,3 +37,49 @@ fig = px.choropleth_mapbox(
 )
 fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 st.plotly_chart(fig)
+
+## Mapping small city to City/Stadt
+
+# Get Caton Dictionary
+canton_dict = {}
+data = json.load(open("./data/raw/gemeinden-json.json"))
+for item in data:
+    canton_dict[item['gemeinde']['NAME']] = item['kanton']['NAME']
+
+# Add Canton column
+reduced_df['canton'] = df['addr:city'].map(canton_dict)
+
+st.dataframe(data=reduced_df)
+
+# Number of Migros stores per Canton
+reduced_df = reduced_df.groupby(by=['canton']).agg({
+    'count': 'sum'
+}).reset_index()
+
+# Control Panel
+if st.checkbox("Show DataFrame", value=False):
+    st.subheader("Dataset")
+    st.text('Migros Stores Data in Switzerland')
+    st.dataframe(data=df)
+    st.text('Processed Data')
+    st.text('Problem: some cities don\'t have any canton')
+    st.dataframe(data=reduced_df)
+
+## Plot against Canton
+fig2 = px.choropleth_mapbox(
+    reduced_df,
+    geojson=geo_df_raw,
+    color="count",
+    locations="canton",
+    featureidkey="properties.kan_name", #TODO: we should map regions/towns to city
+    center={"lat": 46.8, "lon": 8.3},
+    mapbox_style="carto-positron",
+    opacity=0.8,
+    width=800,
+    height=600,
+    hover_data=[],
+    zoom=6,
+    title='Migros Stores density in Switzerland', # <<< this doesn't make any changes!
+)
+fig2.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+st.plotly_chart(fig2)
