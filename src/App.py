@@ -23,15 +23,17 @@ st.header("Migros Stores Consultancy in Switzerland")
 with st.sidebar:
     selected = om(
         'Navigation',
-        ['Home', 'Data Processing', 'Settings'],
-        icons=['house', 'cloud-download', 'gear'],
+        ['Google Map', 'Open Street Map', 'Data Processing', 'Settings'],
+        icons=['house', 'pin-map', 'cloud-download', 'gear'],
         menu_icon='',
         default_index=0,
         orientation='vertical'
     )
 
-if selected == 'Home':
-    exec(open('./src/Page/HomePage.py').read())
+if selected == 'Google Map':
+    exec(open('./src/Page/GoogleMapPage.py').read())
+elif selected == 'Open Street Map':
+    exec(open('./src/Page/OpenStreetMapPage.py').read())
 elif selected == 'Data Processing':
     exec(open('./src/Page/DataProcessingPage.py').read())
 else:

@@ -19,7 +19,10 @@ with open("./data/raw/georef-switzerland-kanton.geojson") as response:
 # Number of Migros stores per city
 reduced_df = df.groupby(by=['addr:city']).size().reset_index(name='count')
 
+st.subheader("Plotting")
+
 ## Plot against cities (not Cantons)
+st.text('Migros stores per city density')
 fig = px.choropleth_mapbox(
     reduced_df,
     geojson=geo_df_raw,
@@ -47,27 +50,18 @@ for item in data:
     canton_dict[item['gemeinde']['NAME']] = item['kanton']['NAME']
 
 # Add Canton column
-reduced_df['canton'] = df['addr:city'].map(canton_dict)
-
-st.dataframe(data=reduced_df)
+mapped_reduced_df = reduced_df.copy()
+mapped_reduced_df['canton'] = mapped_reduced_df['addr:city'].map(canton_dict)
 
 # Number of Migros stores per Canton
-reduced_df = reduced_df.groupby(by=['canton']).agg({
+mapped_reduced_df = mapped_reduced_df.groupby(by=['canton']).agg({
     'count': 'sum'
 }).reset_index()
-
-# Control Panel
-if st.checkbox("Show DataFrame", value=False):
-    st.subheader("Dataset")
-    st.text('Migros Stores Data in Switzerland')
-    st.dataframe(data=df)
-    st.text('Processed Data')
-    st.text('Problem: some cities don\'t have any canton')
-    st.dataframe(data=reduced_df)
-
+    
 ## Plot against Canton
+st.text('Migros stores per Canton (after mapping) density')
 fig2 = px.choropleth_mapbox(
-    reduced_df,
+    mapped_reduced_df,
     geojson=geo_df_raw,
     color="count",
     locations="canton",
@@ -83,3 +77,15 @@ fig2 = px.choropleth_mapbox(
 )
 fig2.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 st.plotly_chart(fig2)
+
+# Showing DataSet
+if st.checkbox("Show DataFrame", value=False):
+    st.subheader("Dataset")
+    st.text('Migros Stores Data in Switzerland')
+    st.dataframe(data=df)
+    st.text('Processed Data')
+    st.text('Problem: some cities don\'t have any canton')
+    st.dataframe(data=reduced_df)
+    st.text('Processed Data')
+    st.text('Problem: some cities don\'t have any canton')
+    st.dataframe(data=mapped_reduced_df)
