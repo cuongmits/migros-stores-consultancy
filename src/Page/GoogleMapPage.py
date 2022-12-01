@@ -21,7 +21,7 @@ reduced_df = df.groupby(by=['commune']).size().reset_index(name='count')
 
 st.subheader("Plotting")
 
-## Mapping small city to City/Stadt
+## Mapping Commune to Canton
 
 # Get Caton Dictionary
 canton_dict = {}
@@ -65,11 +65,9 @@ st.plotly_chart(fig2)
 # Showing DataSet
 if st.checkbox("Show DataFrame", value=False):
     st.subheader("Dataset")
-    st.text('Migros Stores Data in Switzerland')
+    st.text('All Store Brand Data in Switzerland')
     st.dataframe(data=df)
-    st.text('Processed Data')
-    st.text('Problem: some cities don\'t have any canton')
+    st.text('Store data regarding communes')
     st.dataframe(data=reduced_df)
-    st.text('Processed Data')
-    st.text('Problem: some cities don\'t have any canton')
+    st.text('Store data regarding cantons')
     st.dataframe(data=mapped_reduced_df)
