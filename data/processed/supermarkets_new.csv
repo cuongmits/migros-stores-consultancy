@@ -113,7 +113,7 @@
 111,358,"Lägernstrasse 6, 8154 Oberglatt, Switzerland",Migros Supermarkt,ChIJC0iV_Pl1kEcRXXQK5sPmFyk,4.5,33.0,47.47555999999999,8.507587,True,,Lägernstrasse 6,Oberglatt, Switzerland,migro,Migros
 112,363,"Ziegeleipl. 2, 8406 Dättnau, Switzerland",Migros Supermarkt,ChIJYwGwISCZmkcRLRWwcxCAmWA,4.5,38.0,47.4773023,8.6993628,True,,Ziegeleipl. 2,Dättnau, Switzerland,migro,Migros
 113,365,"Haldenstrasse 10, 8307 Illnau-Effretikon, Switzerland",Coop Supermarkt Effretikon Effimärt,ChIJ9egPo3OimkcRvJTna7VPhog,3.9,140.0,47.4281136,8.6849058,True,,Haldenstrasse 10,Illnau-Effretikon, Switzerland,coop,Coop Supermarkt Effretikon Effimärt
-114,369,"8406 Winterthur, Switzerland",Coop,ChIJHZuxWBeZmkcRebE45MIfm0s,0.0,0.0,47.4828151,8.7027907,,,8406 Winterthur,erland,,coop,Coop
+114,369,"8406 Winterthur, Switzerland",Coop,ChIJHZuxWBeZmkcRebE45MIfm0s,0.0,0.0,47.4828151,8.7027907,,,8406 Winterthur,Winterthur,,coop,Coop
 115,370,"Talackerstrasse 68, 8152 Opfikon, Switzerland",Coop Supermarkt Opfikon,ChIJMbmY4gWgmkcRIb56rtzCKPk,4.2,144.0,47.4284888,8.563879499999999,True,,Talackerstrasse 68,Opfikon, Switzerland,coop,Coop Supermarkt Opfikon
 116,371,"Europa-Strasse 4, 8152 Opfikon, Switzerland",Coop Supermarkt Glattbrugg Bahnhof,ChIJlyRH3gmgmkcRi9bA_jZWBDw,4.1,279.0,47.4306755,8.5600106,True,,Europa-Strasse 4,Opfikon, Switzerland,coop,Coop Supermarkt Glattbrugg Bahnhof
 117,372,"Thurgauerstrasse 106, 8152 Opfikon, Switzerland",Migros Supermarkt,ChIJDzSxlnWgmkcRkuKcKvoGFB8,4.2,407.0,47.4210946,8.5577823,True,,Thurgauerstrasse 106,Opfikon, Switzerland,migro,Migros
@@ -715,7 +715,7 @@
 713,2079,"Brünnenstrasse 118, 3018 Bern, Switzerland",Coop Supermarkt Bern Bümpliz,ChIJlWd_iyE5jkcRMVi8P_xcJLk,4.3,619.0,46.94147419999999,7.3915788,True,,Brünnenstrasse 118,Bern, Switzerland,coop,Coop Supermarkt Bern Bümpliz
 714,2087,"Holzackerstrasse 2, 4562 Biberist, Switzerland",Lidl Schweiz,ChIJyTxocz0ojkcRLJmH2n6IpQI,4.0,583.0,47.19037609999999,7.552172199999999,True,,Holzackerstrasse 2,Biberist, Switzerland,lidl,Lidl Schweiz
 715,2091,"Bielstrasse 21, 3053 Münchenbuchsee, Switzerland",Coop Pronto Shop mit Tankstelle Münchenbuchsee,ChIJfXa6W-E6jkcRk3eHtfvHK0M,4.1,162.0,47.0265042,7.443771099999999,True,,Bielstrasse 21,Münchenbuchsee, Switzerland,coop,Coop Pronto Shop mit Tankstelle Münchenbuchsee
-716,2105,"3322 Urtenen-Schönbühl, Switzerland",Coop Outlet,ChIJ4Vgu9G8xjkcRQMAmkEEPqaY,4.2,163.0,47.0180912,7.501073300000001,False,,3322 Urtenen-Schönbühl,erland,,coop,Coop Outlet
+716,2105,"3322 Urtenen-Schönbühl, Switzerland",Coop Outlet,ChIJ4Vgu9G8xjkcRQMAmkEEPqaY,4.2,163.0,47.0180912,7.501073300000001,False,,3322 Urtenen-Schönbühl,Urtenen-Schönbühl,,coop,Coop Outlet
 717,2106,"Sandstrasse 8, 3322 Urtenen-Schönbühl, Switzerland",Coop Pronto Shop mit Tankstelle Urtenen-Schönbühl,ChIJB-sfSm4wjkcRxPa3Jp7HqCE,4.4,147.0,47.0177416,7.501706199999999,True,,Sandstrasse 8,Urtenen-Schönbühl, Switzerland,coop,Coop Pronto Shop mit Tankstelle Urtenen-Schönbühl
 718,2108,"Industriestrasse 10, 3321, 3302 Urtenen-Schönbühl, Switzerland",Migros Take Away,ChIJjabP5HowjkcR1iONDiC2Kk0,3.8,45.0,47.0168824,7.492864099999999,True,,Industriestrasse 10,Urtenen-Schönbühl, 3302 Urtenen-Schönbühl,migro,Migros
 719,2112,"Industriestrasse 10, 3321 Urtenen-Schönbühl, Switzerland",Migros Florissimo,ChIJT0UIqekxjkcRY6Fux8BvXnc,5.0,1.0,47.0170313,7.4927271,True,,Industriestrasse 10,Urtenen-Schönbühl, Switzerland,migro,Migros
@@ -2213,7 +2213,7 @@
 2228,8465,"Via Besso 74, 6900 Massagno, Switzerland",Migros Supermarkt,ChIJG9V9p4EthEcRTHt3RbdMlYc,4.2,364.0,46.0097465,8.9390925,True,,Via Besso 74,Massagno, Switzerland,migro,Migros
 2229,8472,"Via Cantonale 4, 6805 Mezzovico-Vira, Switzerland",ALDI SUISSE,ChIJ_RHM4ag0hEcRp3M2ossoAos,4.1,492.0,46.0898082,8.9215044,True,,Via Cantonale 4,Mezzovico-Vira, Switzerland,aldi,ALDI SUISSE
 2230,8478,"Via Alla Bozzoreda 39, 6963 Lugano, Switzerland",Migros Supermarkt,ChIJD7GtfREyhEcRk7xHLUFn9zw,4.2,498.0,46.0235202,8.9671337,True,,Via Alla Bozzoreda 39,Lugano, Switzerland,migro,Migros
-2231,8498,"6875 Monte, Switzerland",La Butega da Munt Società Cooperativa,ChIJU2ApjnoohEcRZYhHUM61BsU,4.5,4.0,45.8815648,9.0277059,False,,6875 Monte,erland,,coop,La Butega da Munt Società Cooperativa
+2231,8498,"6875 Monte, Switzerland",La Butega da Munt Società Cooperativa,ChIJU2ApjnoohEcRZYhHUM61BsU,4.5,4.0,45.8815648,9.0277059,False,,6875 Monte,Monte,,coop,La Butega da Munt Società Cooperativa
 2232,8516,"Via Gaggiolo 45, 6855 Stabio, Switzerland",Migrolino,ChIJ8a1IpPKBhkcRWlPKMHBcP9w,4.0,146.0,45.8425611,8.9193716,True,,Via Gaggiolo 45,Stabio, Switzerland,migro,Migrolino
 2233,8520,"Nucleo Breno 9, 6937 Alto Malcantone, Switzerland",Società Cooperativa Alto Malcantone,ChIJrSp-N2rNhUcRrEbYe96zNj0,0.0,0.0,46.0331402,8.870142999999999,True,,Nucleo Breno 9,Alto Malcantone, Switzerland,coop,Società Cooperativa Alto Malcantone
 2234,8522,"Via Monte Ceneri 1, 6572 Quartino, Switzerland",migrolino Quartino,ChIJ15GKxF_LhUcRef1wMcGDac4,0.0,0.0,46.1519893,8.9150333,True,,Via Monte Ceneri 1,Quartino, Switzerland,migro,migrolino Quartino
@@ -2251,7 +2251,7 @@
 2266,8592,"Via Gaggiolo 33, 6855 Stabio, Switzerland",migrolino Stabio Paese,ChIJA-5UPvSBhkcRhvFlY7gCyeI,3.7,21.0,45.844765,8.9270067,True,,Via Gaggiolo 33,Stabio, Switzerland,migro,migrolino Stabio Paese
 2267,8593,"Via Andrea Salvatore Aglio 28, 6864 Arzo, Switzerland",Coop Supermercato Arzo,ChIJyRmzDvQphEcRoQcu0-T-THg,4.2,147.0,45.8739313,8.946019699999999,True,,Via Andrea Salvatore Aglio 28,Arzo, Switzerland,coop,Coop Supermercato Arzo
 2268,8597,"Via dei Patrizi 18, 6865 Tremona, Switzerland",Cooperativa,ChIJRyZmmisphEcR_bsC1-_SMMg,4.8,10.0,45.8810829,8.9584418,False,,Via dei Patrizi 18,Tremona, Switzerland,coop,Cooperativa
-2269,8598,"6866 Meride, Switzerland",Società Cooperativa di Consumo Meride,ChIJiS2uooYphEcR_zpVcKKPLTo,0.0,0.0,45.8907964,8.951730200000002,,,6866 Meride,erland,,coop,Società Cooperativa di Consumo Meride
+2269,8598,"6866 Meride, Switzerland",Società Cooperativa di Consumo Meride,ChIJiS2uooYphEcR_zpVcKKPLTo,0.0,0.0,45.8907964,8.951730200000002,,,6866 Meride,Meride,,coop,Società Cooperativa di Consumo Meride
 2270,8600,"Via Gaggiolo 33, 6855 Stabio, Switzerland","Piccadilly SA - Pica, Migrolino",ChIJS7uMJJOBhkcRXMVnp9k9y2s,3.7,11.0,45.844819,8.9271712,True,,Via Gaggiolo 33,Stabio, Switzerland,migro,"Piccadilly SA - Pica, Migrolino"
 2271,8602,"Via Gaggiolo 45, 6855 Stabio, Switzerland","Piccadilly SA - Eni, Migrolino",ChIJf2j8nyOBhkcRq5AbeJiIE94,3.7,3.0,45.8424645,8.9191211,True,,Via Gaggiolo 45,Stabio, Switzerland,migro,"Piccadilly SA - Eni, Migrolino"
 2272,8605,"Via del Breggia 9, 6833 Vacallo, Switzerland",migrolino Pizzamiglio,ChIJF36q2TedhkcRFjEcnR73EZU,5.0,2.0,45.8427576,9.0371605,True,,Via del Breggia 9,Vacallo, Switzerland,migro,migrolino Pizzamiglio
@@ -2302,7 +2302,7 @@
 2317,8768,"Rte de la Gare 12, 1165 Allaman, Switzerland",Coop Pronto avec station-service Allaman Littoral Centre,ChIJZQJKHsJHjEcRQLRkLEWmc00,4.1,100.0,46.4768249,6.4011812,True,,Rte de la Gare 12,Allaman, Switzerland,coop,Coop Pronto avec station-service Allaman Littoral Centre
 2318,8769,"Rte d'Allaman 41, 1163 Etoy, Switzerland",Lidl,ChIJNe6unu1HjEcRMEx45KDJuf4,4.1,587.0,46.4743983,6.413719,True,,Rte d'Allaman 41,Etoy, Switzerland,lidl,Lidl
 2319,8772,"Rte Suisse 26, 1163 Etoy, Switzerland",Migros,ChIJiwH6h_VHjEcRFAf-pzhSdF8,4.1,691.0,46.47363379999999,6.4259398,True,,Rte Suisse 26,Etoy, Switzerland,migro,Migros
-2320,8779,"1183 Bursins, Switzerland",Coop Pronto,ChIJV555DbBFjEcR5YG8db7gNj0,0.0,0.0,46.4464966,6.297348,True,,1183 Bursins,erland,,coop,Coop Pronto
+2320,8779,"1183 Bursins, Switzerland",Coop Pronto,ChIJV555DbBFjEcR5YG8db7gNj0,0.0,0.0,46.4464966,6.297348,True,,1183 Bursins,Bursins,,coop,Coop Pronto
 2321,8781,"Rue du Temple 6, 1180 Rolle, Switzerland",Coop Supermarché Rolle,ChIJ1WmIwH1GjEcRqWtOkUcN8bE,4.0,195.0,46.4582981,6.337724199999999,,,Rue du Temple 6,Rolle, Switzerland,coop,Coop Supermarché Rolle
 2322,8782,"Rte de la Vallée 7, 1180 Rolle, Switzerland",migrolino,ChIJj8p-53hGjEcRmE0dww-ix8A,4.1,65.0,46.4627879,6.3351425,True,,Rte de la Vallée 7,Rolle, Switzerland,migro,migrolino
 2323,8784,"Av. de la Gare 17, 1180 Rolle, Switzerland",Supermarché Migros,ChIJE1qxBnxGjEcRBXDwzh8312o,4.2,484.0,46.4612033,6.3381013,True,,Av. de la Gare 17,Rolle, Switzerland,migro,Migros
@@ -2429,7 +2429,7 @@
 2449,9369,"Rue de Lausanne 43, 1110 Morges, Switzerland",Coop Pronto avec station-service Morges,ChIJiTEooSI3jEcRNULezTgQYak,4.1,220.0,46.5156615,6.5039764,True,,Rue de Lausanne 43,Morges, Switzerland,coop,Coop Pronto avec station-service Morges
 2450,9377,"Rte de Morges 20, 1162 Saint-Prex, Switzerland",Coop Pronto avec station-service Saint-Prex,ChIJKc_LUCY4jEcRDmnouOcKwaA,4.2,200.0,46.485534,6.4601709,True,,Rte de Morges 20,Saint-Prex, Switzerland,coop,Coop Pronto avec station-service Saint-Prex
 2451,9385,"Rte de Cossonay 3, 1029 Villars-Sainte-Croix, Switzerland",Migrol Service avec carburants Shell,ChIJqxHl100zjEcRn6rzvx1dtwA,0.0,0.0,46.5669172,6.558786599999999,True,,Rte de Cossonay 3,Villars-Sainte-Croix, Switzerland,migro,Migrol Service avec carburants Shell
-2452,9393,"1522 Lucens, Switzerland",LANDI Lucens Société coopérative,ChIJt5xO1RrWjUcRQm0cprl3CVg,5.0,1.0,46.7085184,6.8378728,True,,1522 Lucens,erland,,coop,LANDI Lucens Société coopérative
+2452,9393,"1522 Lucens, Switzerland",LANDI Lucens Société coopérative,ChIJt5xO1RrWjUcRQm0cprl3CVg,5.0,1.0,46.7085184,6.8378728,True,,1522 Lucens,Lucens,,coop,LANDI Lucens Société coopérative
 2453,9406,"Route de Lucens 8, 1536 Combremont-le-Petit, Switzerland",Société coopérative de fromagerie les Trois villages,ChIJbyjYRKDXjUcRG6luMWbB-z8,0.0,0.0,46.748994,6.8076559,,,Route de Lucens 8,Combremont-le-Petit, Switzerland,coop,Société coopérative de fromagerie les Trois villages
 2454,9422,"Rue de la Morâche 6, 1260 Nyon, Switzerland",Migros,ChIJ9UWxd9dCjEcR9yLc1v951Dc,4.1,503.0,46.3825894,6.234432700000001,True,,Rue de la Morâche 6,Nyon, Switzerland,migro,Migros
 2455,9423,"Imp. Champ-Colin 12, 1260 Nyon, Switzerland",migrolino,ChIJpzgTIyldjEcRjdvourXviL4,4.1,57.0,46.3839412,6.2213541,True,,Imp. Champ-Colin 12,Nyon, Switzerland,migro,migrolino
@@ -2481,7 +2481,7 @@
 2501,9752,"Belalpstrasse 1, 3900 Brig, Switzerland",Migros Supermarkt,ChIJb1bL3dNuj0cRIj2vubJgjW4,4.1,351.0,46.3187147,7.9893265,True,,Belalpstrasse 1,Brig, Switzerland,migro,Migros
 2502,9753,"Kantonsstrasse 58, 3902 Glis, Switzerland",Migros Supermarkt,ChIJXZYxzElpj0cRboXtDVYfKYo,4.4,430.0,46.309064,7.9696908,True,,Kantonsstrasse 58,Glis, Switzerland,migro,Migros
 2503,9754,"Weidenweg 272, 3902 Glis, Switzerland",migrolino Glis,ChIJHQcAxJZtkEcRWH0lvHWmSKk,4.4,48.0,46.3075194,7.9661076,True,,Weidenweg 272,Glis, Switzerland,migro,migrolino Glis
-2504,9760,"3900 Brig, Switzerland",Coop,ChIJyWePcEVpj0cRBC4ibRle0RY,0.0,0.0,46.30604750000001,7.960655499999999,True,,3900 Brig,erland,,coop,Coop
+2504,9760,"3900 Brig, Switzerland",Coop,ChIJyWePcEVpj0cRBC4ibRle0RY,0.0,0.0,46.30604750000001,7.960655499999999,True,,3900 Brig,Brig,,coop,Coop
 2505,9764,"Furkastrasse 20, 3904 Naters, Switzerland",Coop Supermarkt Naters Bine,ChIJWUG2YdBuj0cRmMq7mLRbwQ4,4.2,86.0,46.3231104,7.9892439,True,,Furkastrasse 20,Naters, Switzerland,coop,Coop Supermarkt Naters Bine
 2506,9765,"Belalpstrasse 1, 3900 Brig, Switzerland",Migros Take Away,ChIJb1bL3dNuj0cRIPBc5cJ76gI,3.8,108.0,46.3185954,7.989421699999999,True,,Belalpstrasse 1,Brig, Switzerland,migro,Migros
 2507,9777,"Rue des Collonges, 1957 Ardon, Switzerland",Société Coopérative de Consommation,ChIJtUo5aKjEjkcR85fEu6MYTyU,0.0,0.0,46.2072508,7.263547999999999,True,,Rue des Collonges,Ardon, Switzerland,coop,Société Coopérative de Consommation
@@ -2583,7 +2583,7 @@
 2604,10216,"Untere Dorfstrasse 41, 3906 Saas-Fee, Switzerland",Coop Supermarkt Saas Fee Dorfstrasse,ChIJbRLiTL1Fj0cRoW8PfwFUJ_Q,4.1,363.0,46.1077356,7.926258,False,,Untere Dorfstrasse 41,Saas-Fee, Switzerland,coop,Coop Supermarkt Saas Fee Dorfstrasse
 2605,10217,"Obere Dorfstrasse 6, 3906 Saas-Fee, Switzerland",Coop Supermarkt Saas Fee Postplatz,ChIJ3XWsZiJFj0cRE6fpltCJCac,4.8,19.0,46.1091875,7.9287185,True,,Obere Dorfstrasse 6,Saas-Fee, Switzerland,coop,Coop Supermarkt Saas Fee Postplatz
 2606,10218,"Saastalstrasse Hauptstrasse, 3910 Saas-Grund, Switzerland",Coop Supermarkt Saas Grund,ChIJpwgCXqtFj0cRNkZMXVlaeEA,4.4,342.0,46.1247856,7.937032899999999,False,,Saastalstrasse Hauptstrasse,Saas-Grund, Switzerland,coop,Coop Supermarkt Saas Grund
-2607,10221,"3906 Saas-Fee, Switzerland",Coop,ChIJ5aO8F3xFj0cR-Uy_t22djOo,4.8,10.0,46.1090661,7.928438699999999,True,,3906 Saas-Fee,erland,,coop,Coop
+2607,10221,"3906 Saas-Fee, Switzerland",Coop,ChIJ5aO8F3xFj0cR-Uy_t22djOo,4.8,10.0,46.1090661,7.928438699999999,True,,3906 Saas-Fee,Saas-Fee,,coop,Coop
 2608,10229,"Bahnhofpl. 6, 3920 Zermatt, Switzerland",Coop Supermarkt Zermatt,ChIJNQot8XU2j0cRP9r3IJXsOUI,4.2,836.0,46.0233462,7.748986899999999,True,,Bahnhofpl. 6,Zermatt, Switzerland,coop,Coop Supermarkt Zermatt
 2609,10248,"Zum Marktplatz, 3922 Stalden, Switzerland",Migros Partenaire,ChIJ1S-15jBAj0cR4HgjdM7KcLc,4.6,32.0,46.2332723,7.870600999999999,False,,Zum Marktplatz,Stalden, Switzerland,migro,Migros
 2610,10251,"Talstrasse 14, 3922 Stalden, Switzerland",Migrol Service mit Shell-Treibstoff,ChIJ02SGCS5Aj0cRyzTsB2prTlk,3.7,9.0,46.2470935,7.8768388,True,,Talstrasse 14,Stalden, Switzerland,migro,Migrol Service mit Shell-Treibstoff
@@ -2625,7 +2625,7 @@
 2646,10402,"Rte de Thonon 345, 1247 Anières, Switzerland",Migrol Service,ChIJ3Sg65SxvjEcRmN_xdBOlfjI,4.4,50.0,46.2676343,6.2367743,True,,Rte de Thonon 345,Anières, Switzerland,migro,Migrol Service
 2647,10406,"Rue de Lausanne 45-47, 1201 Genève, Switzerland",Lidl,ChIJc0jA_CBljEcRjh7AFUAg6VA,4.1,1260.0,46.2137803,6.1455036,True,,Rue de Lausanne 45-47,Genève, Switzerland,lidl,Lidl
 2648,10410,"Rte de Chancy 71/77, 1213 Petit-Lancy, Switzerland",Lidl,ChIJTYqE9kZ7jEcRvW02UbMh2oQ,4.1,551.0,46.18707819999999,6.1113161,True,,Rte de Chancy 71/77,Petit-Lancy, Switzerland,lidl,Lidl
-2649,10414,"Av. Louis-Casaï 27 1211, 28 Genève, Switzerland",Supermarché Migros Balexert,ChIJiRdMPJhkjEcRxskayBMWa2o,4.3,1629.0,46.2187665,6.1131166,True,,Av. Louis-Casaï 27 1211,nève, Switzerland,migro,Migros
+2649,10414,"Av. Louis-Casaï 27, 1211 Genève, Switzerland",Supermarché Migros Balexert,ChIJiRdMPJhkjEcRxskayBMWa2o,4.3,1629.0,46.2187665,6.1131166,True,,Av. Louis-Casaï 27 1211,Genève, Switzerland,migro,Migros
 2650,10416,"Pl. du Premier-Août 1, 1212 Lancy, Switzerland",Coop Supermarché Grand-Lancy,ChIJZbyB1DlljEcRq1j-UsFQNmQ,4.0,248.0,46.18189659999999,6.1202732,True,,Pl. du Premier-Août 1,Lancy, Switzerland,coop,Coop Supermarché Grand-Lancy
 2651,10417,"Rte de Chancy 71, 1213 Petit-Lancy, Switzerland",ALDI SUISSE,ChIJTYqE9kZ7jEcRzv7rilX4XLI,3.9,361.0,46.187067,6.11135,True,,Rte de Chancy 71,Petit-Lancy, Switzerland,aldi,ALDI SUISSE
 2652,10418,"Av. de Châtelaine 89, 1219 Châtelaine, Switzerland",Coop Supermarché Châtelaine,ChIJs3kPsrtkjEcRl64DkOvxA_Q,4.1,220.0,46.2110753,6.1119674,True,,Av. de Châtelaine 89,Châtelaine, Switzerland,coop,Coop Supermarché Châtelaine
