@@ -2,8 +2,6 @@ import streamlit as st
 import plotly.express as px
 from copy import deepcopy
 
-st.write('This is homepage')
-
 # Reading data
 @st.cache
 def load_data(path):
@@ -17,14 +15,21 @@ with open("./data/raw/georef-switzerland-kanton.geojson") as response:
 
 # Process data
 reduced_df = df.groupby(by=['addr:city']).size().reset_index(name='count')
-st.dataframe(data=reduced_df)
+
+# Control Panel
+if st.checkbox("Show DataFrame", value=False):
+    st.subheader("Dataset")
+    st.text('Migros Stores Data in Switzerland')
+    st.dataframe(data=df)
+    st.text('Processed Data')
+    st.dataframe(data=reduced_df)
 
 fig = px.choropleth_mapbox(
-    reduced_df, 
-    geojson=geo_df_raw, 
+    reduced_df,
+    geojson=geo_df_raw,
     color="count",
-    locations="addr:city", 
-    featureidkey="properties.kan_name",
+    locations="addr:city",
+    featureidkey="properties.kan_name", #TODO: we should map regions/towns to city
     center={"lat": 46.8, "lon": 8.3},
     mapbox_style="carto-positron",
     opacity=0.8,
