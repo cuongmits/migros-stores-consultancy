@@ -36,6 +36,6 @@ write a paragraph on what should be done (further study, or actions...)
 
 # References
 
-- [this is a first link](https://www.google.com/)
+- [Streamlit Option Menu](https://github.com/victoryhb/streamlit-option-menu)
 - [this is another link](https://www.google.com/)
 - [this is a third link](https://www.google.com/)
