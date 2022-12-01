@@ -37,6 +37,10 @@ mapped_reduced_df['canton'] = mapped_reduced_df['commune'].map(canton_dict)
 mapped_reduced_df = mapped_reduced_df.groupby(by=['canton']).agg({
     'count': 'sum'
 }).reset_index()
+
+# Add population
+canton_population = pd.read_csv("./data/processed/canton_population.csv", low_memory=False)
+mapped_reduced_df = mapped_reduced_df.join(canton_population.set_index('canton'), on='canton')
     
 ## Plot against Canton
 st.text('Migros stores per Canton (after mapping) density')
