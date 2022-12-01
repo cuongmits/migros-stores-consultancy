@@ -40,6 +40,8 @@ mapped_reduced_df = mapped_reduced_df.groupby(by=['canton']).agg({
 
 # Add population
 canton_population = pd.read_csv("./data/processed/canton_population.csv", low_memory=False)
+st.dataframe(data=canton_population)
+st.dataframe(data=mapped_reduced_df)
 mapped_reduced_df = mapped_reduced_df.join(canton_population.set_index('canton'), on='canton')
     
 ## Plot against Canton
