@@ -1,33 +1,24 @@
 import pandas as pd
 import plotly.graph_objects as go
 import plotly.express as px
-import plotly.io as pio
-import numpy as np
-from plotly.subplots import make_subplots
-import json
 import geojson
-
 import streamlit as st
 
-
-# # Reading data
-# @st.cache
-# def load_data(path):
-#     df = pd.read_csv(path)
-#     return df
-
-# df_raw = load_data(path='./data/processed/migros_stores_data.csv')
-# df = deepcopy(df_raw)
+# Reading data
+@st.cache
+def load_data(path):
+    df = pd.read_csv(path)
+    return df
 
 ### Step 1
 
-bip_kanton = pd.read_csv('./data/git/BIP_Kanton_2019.csv')
-population_df = pd.read_csv('./data/git/df_population_cleaned_final.csv')
-income_zürich_df = pd.read_csv('./data/git/income_zurich_2021.csv')
+bip_kanton = load_data(path='./data/git/BIP_Kanton_2019.csv')
+population_df = load_data(path='./data/git/df_population_cleaned_final.csv')
+income_zürich_df = load_data(path='./data/git/income_zurich_2021.csv')
+
 # Open the Geojson, and change the key for the maps - BFS number, works not with a point
 with open("./data/git/gemeinden-geojson.geojson") as f:
     gj = geojson.load(f)
-
 for i in range(len(gj["features"])):
     gj["features"][i]['properties']['gemeinde_BFS_NUMMER'] = gj["features"][i]['properties'].pop('gemeinde.BFS_NUMMER')
 
