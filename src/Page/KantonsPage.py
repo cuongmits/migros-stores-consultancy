@@ -124,7 +124,7 @@ else:
         color='canton',
         color_discrete_map=color_discrete_map,
         #title="Population per Store unit in Switzerland"
-        )
+    )
     fig.update_layout(barmode='stack', xaxis={'categoryorder':'max descending'})
     st.plotly_chart(fig)
     
@@ -143,7 +143,7 @@ else:
         color='canton',
         color_discrete_map=color_discrete_map,
         #title="Market Share of Migro in Switzerland"
-        )
+    )
     fig.update_layout(barmode='stack', xaxis={'categoryorder':'max ascending'})
     st.plotly_chart(fig)
 
