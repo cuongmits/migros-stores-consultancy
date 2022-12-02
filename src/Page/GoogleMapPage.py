@@ -14,7 +14,6 @@ with open("./data/raw/georef-switzerland-kanton.geojson") as response:
     geo_df_raw = json.load(response)
 
 ### Processing data
-# TODO: Remove duplications by uniqueID
 
 # Number of Migros stores per city
 reduced_df = df.groupby(by=['commune', 'is_migros']).size().reset_index(name='count')
@@ -57,47 +56,97 @@ mapped_reduced_df = mapped_reduced_df.join(canton_population.set_index('canton')
 mapped_reduced_df['popul_per_store'] = mapped_reduced_df['population'] / mapped_reduced_df['total']
 mapped_reduced_df['market_percent'] = mapped_reduced_df['is_migros'] * 100 / mapped_reduced_df['total']
     
-## Plot against Canton
-st.text('Population per store density')
-fig = px.choropleth_mapbox(
-    mapped_reduced_df,
-    geojson=geo_df_raw,
-    color="popul_per_store",
-    locations="canton",
-    featureidkey="properties.kan_name", #TODO: we should map regions/towns to city
-    center={"lat": 46.8, "lon": 8.3},
-    mapbox_style="carto-positron",
-    opacity=0.8,
-    width=800,
-    height=600,
-    hover_data=[],
-    zoom=6,
-    title='Migros Stores density in Switzerland', # <<< this doesn't make any changes!
-)
-fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
-st.plotly_chart(fig)
+### Widget: Ratio
 
-## Plot against Canton
-st.text('Market Percent per Canton')
-fig2 = px.choropleth_mapbox(
-    mapped_reduced_df,
-    geojson=geo_df_raw,
-    color="market_percent",
-    locations="canton",
-    featureidkey="properties.kan_name", #TODO: we should map regions/towns to city
-    center={"lat": 46.8, "lon": 8.3},
-    mapbox_style="carto-positron",
-    opacity=0.8,
-    width=800,
-    height=600,
-    hover_data=[],
-    zoom=6,
-    title='Migros Stores density in Switzerland', # <<< this doesn't make any changes!
-)
-fig2.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
-st.plotly_chart(fig2)
+# Store the initial value of widgets in session state
+if "visibility" not in st.session_state:
+    st.session_state.horizontal = True
+plot_type = st.radio(
+    "Choose Plot type 👇",
+    ['Map', 'Bar'],
+    horizontal=st.session_state.horizontal)
 
-# Showing DataSet
+if plot_type == 'Map':
+
+    ## Population per store density map
+
+    st.text('Population per store density')
+    fig = px.choropleth_mapbox(
+        mapped_reduced_df,
+        geojson=geo_df_raw,
+        color="popul_per_store",
+        locations="canton",
+        featureidkey="properties.kan_name", #TODO: we should map regions/towns to city
+        center={"lat": 46.8, "lon": 8.3},
+        mapbox_style="carto-positron",
+        opacity=0.8,
+        width=800,
+        height=600,
+        hover_data=[],
+        zoom=6,
+        title='Migros Stores density in Switzerland', # <<< this doesn't make any changes!
+    )
+    fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+    st.plotly_chart(fig)
+
+    ## Market Percent per Canton map
+
+    st.text('Market Percent per Canton')
+    fig2 = px.choropleth_mapbox(
+        mapped_reduced_df,
+        geojson=geo_df_raw,
+        color="market_percent",
+        locations="canton",
+        featureidkey="properties.kan_name", #TODO: we should map regions/towns to city
+        center={"lat": 46.8, "lon": 8.3},
+        mapbox_style="carto-positron",
+        opacity=0.8,
+        width=800,
+        height=600,
+        hover_data=[],
+        zoom=6,
+        title='Migros Stores density in Switzerland', # <<< this doesn't make any changes!
+    )
+    fig2.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+    st.plotly_chart(fig2)
+    
+else:
+    default_color = "grey"
+    colors = {"Glarus": "green"}
+    color_discrete_map = {
+        c: colors.get(c, default_color) 
+        for c in mapped_reduced_df.canton.unique()}
+    fig = px.bar(
+        mapped_reduced_df,
+        x="canton",
+        y=["popul_per_store"],
+        hover_data=['total', 'market_percent'],
+        labels={'canton': 'Canton', 'value': 'Population'},
+        color='canton',
+        color_discrete_map=color_discrete_map,
+        title="Population per city")
+    fig.update_layout(barmode='stack', xaxis={'categoryorder':'max descending'})
+    st.plotly_chart(fig)
+    
+    default_color = "grey"
+    colors = {"Jura": "green"}
+    color_discrete_map = {
+        c: colors.get(c, default_color) 
+        for c in mapped_reduced_df.canton.unique()}
+    fig = px.bar(
+        mapped_reduced_df,
+        x="canton",
+        y=["market_percent"],
+        hover_data=['total', 'popul_per_store', 'population'],
+        labels={'canton': 'Canton', 'market_percent': 'Market Percent'},
+        color='canton',
+        color_discrete_map=color_discrete_map,
+        title="Market percent per canton")
+    fig.update_layout(barmode='stack', xaxis={'categoryorder':'max ascending'})
+    st.plotly_chart(fig)
+
+### Showing DataSet
+
 if st.checkbox("Show DataFrame", value=False):
     st.subheader("Dataset")
     st.text('All Store Brand Data in Switzerland')
