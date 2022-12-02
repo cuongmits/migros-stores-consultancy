@@ -1,32 +1,22 @@
-# Title of your project
-
-![Demo](reports/img/pic01.jpg)
+# Business Consultancy
 
 # Link to Demo:
 - [Migros Store Consultancy (Switzerland)](https://migros-store-consultancy.streamlit.app/)
 
 # Summary
 
-**Motivation:** Explain the need for your project in a few words
-**Goal:** write a concrete goal for your project
-**What we propose:** explain the approach you have taken and the results you got so far
-**Next Steps:** List the most important tasks that remain to be done
-**Structure of the document:** if the document is getting big, outline the structure and explain the different parts
+You are a data scientist for Migros, tasked with finding the best places to create new stores. Analyze market opportunities based on the density of existing stores, presence of competitors, and general population density to inform Migros’ development strategy.
 
+# Technologies
 
-# Introduction
-(optional) In the introduction, you can explain the context of your project, refine the question you want to ask and outline the plan for the work
+- Google Map API / Open Street Map API
+- Python with Pandas, Plotly, Streamlit, Pathlib etc.
 
-Here is an example of including images:
+# Working Strategy
 
-![img](reports/img/pic01.jpg)
-
-# Part 1 Title
-Ideally, your work should be broken down into several parts so that it's easier to have a global view of the work you have done
-
-# Part 2 Title
-
-# Part 3 Title
+- Collecting data: this step costs a lot of time (~50%) and effort. How good the result is depends on the input data, so this step should be done very carefully. Sometimes we even need to cross check (eg. two people working on this and cross-check the collected data or we can collect data from different sources and compare them).
+- Analysing the data, create criterias / indicators which can help to make decisions.
+- Implement the logic by processing the data first, then use it to plot diagrams or charts which will visually help people to easily make decisions.
 
 # Conclusion & Recommendations
 
@@ -36,6 +26,6 @@ write a paragraph on what should be done (further study, or actions...)
 
 # References
 
+- [Migros Filalen](https://filialen.migros.ch/de/)
 - [Streamlit Option Menu](https://github.com/victoryhb/streamlit-option-menu)
-- [this is another link](https://www.google.com/)
-- [this is a third link](https://www.google.com/)
+- [Plotly Documentation](https://plotly.com/python-api-reference/)
