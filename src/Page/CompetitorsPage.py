@@ -25,7 +25,7 @@ fig = go.Figure(go.Choroplethmapbox(
     geojson=gj,
     locations=merged_df_only_relevant_big_supermarkets.Number_of_commune,
     z=merged_df_only_relevant_big_supermarkets.N_markets_per_1k_residents,
-    colorscale="RdBu", featureidkey="properties.gemeinde_BFS_NUMMER",
+    colorscale="Viridis", featureidkey="properties.gemeinde_BFS_NUMMER",
     #text=pop_clean['text'],
     zmin = 0 , zmax = 10, marker_opacity=0.5, marker_line_width=0))
 fig.update_layout(
