@@ -57,12 +57,13 @@ mapped_reduced_df['market_percent'] = mapped_reduced_df['is_migros'] * 100 / map
 ### Widget: Ratio
 
 # Store the initial value of widgets in session state
-if "visibility" not in st.session_state:
-    st.session_state.horizontal = True
+# if "visibility" not in st.session_state:
+#     st.session_state.horizontal = True
+# TypeError: radio() got an unexpected keyword argument 'horizontal'
 plot_type = st.radio(
     "Choose Plot type 👇",
     ['Map', 'Bar'],
-    horizontal=st.session_state.horizontal)
+    horizontal=True)
 
 if plot_type == 'Map':
 
