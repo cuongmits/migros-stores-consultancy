@@ -110,7 +110,7 @@ if plot_type == 'Map':
     )
     fig2.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
     st.plotly_chart(fig2)
-    
+
 else:
     st.subheader("Population per Store unit")
     default_color = "grey"
@@ -129,8 +129,15 @@ else:
         #title="Population per Store unit in Switzerland"
     )
     fig.update_layout(barmode='stack', xaxis={'categoryorder':'max descending'})
+
+    # draw medium/media lines
+    medium = mapped_reduced_df['popul_per_store'].mean()
+    median = mapped_reduced_df['popul_per_store'].median()
+    fig.add_hline(y=medium, opacity=0.8, line_width=2, line_dash='dash', line_color='Red', annotation_text="mean")
+    fig.add_hline(y=median, opacity=0.8, line_width=2, line_dash='dash', line_color='Blue', annotation_text="median")
+
     st.plotly_chart(fig)
-    
+
     st.subheader("Market Share of Migro")
     default_color = "grey"
     colors = {"Jura": "green"}
@@ -148,6 +155,13 @@ else:
         #title="Market Share of Migro in Switzerland"
     )
     fig.update_layout(barmode='stack', xaxis={'categoryorder':'max ascending'})
+
+    # draw medium/media lines
+    medium = mapped_reduced_df['market_percent'].mean()
+    median = mapped_reduced_df['market_percent'].median()
+    fig.add_hline(y=medium, opacity=0.8, line_width=2, line_dash='dash', line_color='Red', annotation_text="mean")
+    fig.add_hline(y=median, opacity=0.8, line_width=2, line_dash='dash', line_color='Blue', annotation_text="median")
+
     st.plotly_chart(fig)
 
 ### Showing DataSet
