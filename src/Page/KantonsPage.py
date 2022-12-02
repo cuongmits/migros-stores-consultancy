@@ -24,8 +24,6 @@ reduced_df = df.groupby(by=['commune', 'is_migros']).size().reset_index(name='co
 # store_count_df['total'] = store_count_df['is_migros'] + store_count_df['is_competitor']
 # st.dataframe(data=store_count_df)
 
-st.subheader("Plotting")
-
 ## Mapping Commune to Canton
 
 # Get Caton Dictionary
@@ -70,7 +68,7 @@ if plot_type == 'Map':
 
     ## Population per store density map
 
-    st.text('Population per store density')
+    st.subheader("Population per Store unit")
     fig = px.choropleth_mapbox(
         mapped_reduced_df,
         geojson=geo_df_raw,
@@ -84,14 +82,14 @@ if plot_type == 'Map':
         height=600,
         hover_data=[],
         zoom=6,
-        title='Migros Stores density in Switzerland', # <<< this doesn't make any changes!
+        title='Population per Store unit in Switzerland', # <<< this doesn't make any changes!
     )
     fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
     st.plotly_chart(fig)
 
     ## Market Percent per Canton map
 
-    st.text('Market Percent per Canton')
+    st.subheader("Market Share of Migro")
     fig2 = px.choropleth_mapbox(
         mapped_reduced_df,
         geojson=geo_df_raw,
@@ -105,12 +103,13 @@ if plot_type == 'Map':
         height=600,
         hover_data=[],
         zoom=6,
-        title='Migros Stores density in Switzerland', # <<< this doesn't make any changes!
+        title='Market Share of Migro', # <<< this doesn't make any changes!
     )
     fig2.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
     st.plotly_chart(fig2)
     
 else:
+    st.subheader("Population per Store unit")
     default_color = "grey"
     colors = {"Glarus": "green"}
     color_discrete_map = {
@@ -124,10 +123,12 @@ else:
         labels={'canton': 'Canton', 'value': 'Population'},
         color='canton',
         color_discrete_map=color_discrete_map,
-        title="Population per city")
+        #title="Population per Store unit in Switzerland"
+        )
     fig.update_layout(barmode='stack', xaxis={'categoryorder':'max descending'})
     st.plotly_chart(fig)
     
+    st.subheader("Market Share of Migro")
     default_color = "grey"
     colors = {"Jura": "green"}
     color_discrete_map = {
@@ -138,10 +139,11 @@ else:
         x="canton",
         y=["market_percent"],
         hover_data=['total', 'popul_per_store', 'population'],
-        labels={'canton': 'Canton', 'market_percent': 'Market Percent'},
+        labels={'canton': 'Canton', 'value': 'Market Share (%)'},
         color='canton',
         color_discrete_map=color_discrete_map,
-        title="Market percent per canton")
+        #title="Market Share of Migro in Switzerland"
+        )
     fig.update_layout(barmode='stack', xaxis={'categoryorder':'max ascending'})
     st.plotly_chart(fig)
 
@@ -149,9 +151,9 @@ else:
 
 if st.checkbox("Show DataFrame", value=False):
     st.subheader("Dataset")
-    st.text('All Store Brand Data in Switzerland')
+    st.text('All Store Brand raw Data in Switzerland')
     st.dataframe(data=df)
     # st.text('Store data regarding communes')
     # st.dataframe(data=reduced_df)
-    st.text('Store data regarding cantons')
+    st.text('Processed Store data regarding Kantons')
     st.dataframe(data=mapped_reduced_df)

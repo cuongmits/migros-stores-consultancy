@@ -11,6 +11,7 @@ def load_data(path):
 df_raw = load_data(path='./data/processed/supermarkets_new.csv')
 df = deepcopy(df_raw)
 
+st.subheader("Store Location of all Supermarket brands")
 fig = px.scatter_mapbox(
     df,
     lat='geometry.location.lat',
