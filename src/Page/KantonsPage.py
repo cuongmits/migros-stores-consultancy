@@ -60,10 +60,11 @@ mapped_reduced_df['market_percent'] = mapped_reduced_df['is_migros'] * 100 / map
 # if "visibility" not in st.session_state:
 #     st.session_state.horizontal = True
 # TypeError: radio() got an unexpected keyword argument 'horizontal'
+st.session_state.horizontal = True
 plot_type = st.radio(
     "Choose Plot type 👇",
     ['Map', 'Bar'],
-    horizontal=True)
+    horizontal=st.session_state.horizontal)
 
 if plot_type == 'Map':
 
