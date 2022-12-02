@@ -23,7 +23,7 @@ st.header("Migros Stores Consultancy in Switzerland")
 with st.sidebar:
     selected = om(
         'Navigation',
-        ['Store Location', 'Kantons', 'Macroeconomic Criterias', 'Supermarket Density', 'Datasets', 'Open Street Map', 'Data Processing', 'Settings'],
+        ['Store Location', 'Microeconomic Criterias', 'Macroeconomic Criterias', 'Supermarket Density', 'Datasets', 'Open Street Map', 'Data Processing', 'Settings'],
         icons=['pin-map', 'map', 'people', 'eye', 'clipboard-data', 'pin-map', 'cloud-download', 'gear'],
         menu_icon='',
         default_index=0,
@@ -32,10 +32,10 @@ with st.sidebar:
 
 if selected == 'Store Location':
     exec(open('./src/Page/StoreLocationPage.py').read())
-elif selected == 'Kantons':
-    exec(open('./src/Page/KantonsPage.py').read())
+elif selected == 'Microeconomic Criterias':
+    exec(open('./src/Page/MicroeconomicCriteriasPage.py').read())
 elif selected == 'Macroeconomic Criterias':
-    exec(open('./src/Page/EconomicCriteriasPage.py').read())
+    exec(open('./src/Page/MacroeconomicCriteriasPage.py').read())
 elif selected == 'Supermarket Density':
     exec(open('./src/Page/CompetitorsPage.py').read())
 elif selected == 'Datasets':
