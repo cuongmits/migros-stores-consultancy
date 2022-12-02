@@ -28,7 +28,7 @@ for i in range(len(gj["features"])):
 #we decided not to show
 
 #Change of the population in the Communes in percent, use the csv df_population_cleaned_final.csv
-st.subheader(">>>> Title for this?")
+st.subheader("Change of the population in percent")
 fig_pop_change = go.Figure(
     go.Choroplethmapbox(
         geojson=gj,
