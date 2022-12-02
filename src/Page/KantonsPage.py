@@ -123,7 +123,7 @@ else:
         x="canton",
         y=["popul_per_store"],
         hover_data=['total', 'market_percent'],
-        labels={'canton': 'Canton', 'value': 'Population'},
+        labels={'canton': 'Canton', 'value': 'Population per Store Unit'},
         color='canton',
         color_discrete_map=color_discrete_map,
         #title="Population per Store unit in Switzerland"
